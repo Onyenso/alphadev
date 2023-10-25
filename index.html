@@ -33,6 +33,23 @@
                 'GRAD' 0,
                 'opsz' 48
             }
+
+            .row {
+            display: flex;
+            }
+
+            .column {
+            flex: 1;
+            padding: 10px;
+            text-align: start;
+            /* background-color: #f2f2f2; */
+            }
+            
+            @media (max-width: 768px) {
+                .column {
+                    flex: 100%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -121,21 +138,84 @@
                                 3 times and I am currently reading the books🙂.
                             </div>
                         </p>
-                        <h2 class="heading-2">Tech stack</h2>
-                        <ul>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>SQL</li>
-                            <li>JavaScript</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Git</li>
-                            <li>PostgreSQL</li>
-                            <li>RabbitMQ</li>
-                        </ul>
+                        <div class="row">
+                            <div class="column">
+                                <h2 class="heading-2">Tech stack</h2>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Django</li>
+                                    <li>SQL</li>
+                                    <li>JavaScript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Git</li>
+                                    <li>PostgreSQL</li>
+                                    <li>RabbitMQ</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h2 class="heading-2">Industry knowledge</h2>
+                                <ul>
+                                    <li>Microservices</li>
+                                    <li>Agile Methodology</li>
+                                    <li>Data Structures</li>
+                                    <li>Algorithm Analysis</li>
+                                    <li>Full-stack Web Developement</li>
+                                    <li>Programming</li>
+                                </ul>
+                            </div>
+                            <div class="column">
+                                <h2 class="heading-2">Soft skills</h2>
+                                <ul>
+                                    <li>Oral and Written Communication</li>
+                                    <li>Team Building</li>
+                                    <li>Leadership and Management</li>
+                                </ul>
+                            </div>
+                        </div>
+
                         <h5 class="heading-5 sec-color mb-s" id="projec">featured projects &mdash;</h5>
                         <h2 class="heading-2">Some stuff I've worked on 📁</h2>
                         <div class="project-box__wrapper">
+                            <div class="project-box">
+                                <div class="project-box__link" style="width: 100%;">
+                                    <!-- <a href="https://github.com/Onyenso/YensoGram-v2.0" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                        Source code <img src="github.a1bad59c.svg" alt="github logo">
+                                    </a> -->
+                                    <a href="https://api.dvault.tech/" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                        Live project
+                                    </a>
+                                </div>
+                                <div class="project-box__content">
+                                    <h3 class="heading-3">Dvault</h3>
+                                    Dvault by Dukka is a back-end API service that gives developers the ability to easily integrate a 
+                                    digital wallet into their application. The service enables the creation of dynamic bank accounts that
+                                    will be linked to the wallets and allows the end user to send and receive funds to this
+                                    wallet. Additionally, the API provides simplified KYC verification, tracking of funds and transaction
+                                    history records, making it easier for businesses to reconcile accounts and maintain accurate financial
+                                    records. I integrated our partner commercial banks' APIs that made all these possible.
+                                    <h5 class="heading-5 mt-5">Python &nbsp; Django &nbsp; DRF</h5>
+                                </div>
+                            </div>
+                            <div class="project-box">
+                                <div class="project-box__link" style="width: 100%;">
+                                    <!-- <a href="https://github.com/Onyenso/YensoGram-v2.0" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                        Source code <img src="github.a1bad59c.svg" alt="github logo">
+                                    </a> -->
+                                    <a href="https://play.google.com/store/apps/details?id=com.dukka.dukka&pcampaignid=web_share" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                        Live project
+                                    </a>
+                                </div>
+                                <div class="project-box__content">
+                                    <h3 class="heading-3">Dukka</h3>
+                                    Dukka is an application that provides small business merchants with all they'll need for proper bookeeping,
+                                    inventory management, payment acceptance and POS terminal management. Using Dukka, they can record sales, expenses,
+                                    create reciepts, see profits and losses, create virtual accounts and wallets among other things. I implemented
+                                    the APIs that made the wallets, virtual accounts and payment acceptance possible. In collabration with partner commercial banks,
+                                    I was able to integrate their APIs with our system to make these work.
+                                    <h5 class="heading-5 mt-5">Python &nbsp; Django &nbsp; DRF</h5>
+                                </div>
+                            </div>
                             <div class="project-box">
                                 <div class="project-box__link" style="width: 100%;">
                                     <a href="https://github.com/Onyenso/Switch-Vibes" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
@@ -159,57 +239,17 @@
                                     <!-- <a href="https://github.com/Onyenso/YensoGram-v2.0" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
                                         Source code <img src="github.a1bad59c.svg" alt="github logo">
                                     </a> -->
-                                    <a href="http://dev.dvault.tech/" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                    <a href="https://play.google.com/store/apps/details?id=com.dukka.dash_app&pcampaignid=web_share" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
                                         Live project
                                     </a>
                                 </div>
                                 <div class="project-box__content">
-                                    <h3 class="heading-3">Dvault</h3>
-                                    Dvault by Dukka is a back-end API service that gives other developers the ability to easily integrate a wallet
-                                    feature into their application. The service enables the creation of dynamic bank accounts that
-                                    will be linked to wallets and allows the end user to be able to send and receive funds to this
-                                    wallet. Additionally, the API provides simplified KYC verification, tracking of funds and transactions
-                                    history records, making it easier for businesses to reconcile accounts and maintain accurate financial
-                                    records.
+                                    <h3 class="heading-3">Dash</h3>
+                                    Dash is a mobile marketplace where users can buy from various vendors. They can also pay directly
+                                    on the app from their virtual account which they create on the app. I implemented the microservice
+                                    responsible for realtime notifications in this app. I also implemented the APIs responsible for wallets
+                                    and virtual accounts creation.
                                     <h5 class="heading-5 mt-5">Python &nbsp; Django &nbsp; DRF</h5>
-                                </div>
-                            </div>
-                            <div class="project-box"> 
-                                <div class="project-box__link" style="width: 100%;">
-                                    <a href="https://loans.dukka.com/" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Live project
-                                    </a>
-                                    <!-- <a href="https://github.com/Onyenso/auction" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Source code <img src="github.a1bad59c.svg" alt="github logo">
-                                    </a> -->
-                                </div>
-                                <div class="project-box__content">
-                                    <h3 class="heading-3">Dukka Small Business Loan</h3>
-                                    Dukka Small Business Loan is a website that enables users to apply for a business loan online. The portal
-                                    provides a streamlined and convenient way for users to fill in their personal details, loan guarantor
-                                    information and loan details, which is then securely submitted to Dukka for processing. As the back-end
-                                    developer, I was responsible for designing and building the system that saves user details upon submission,
-                                    notifies Dukka when a new application is received, and ensures the highest level of security and reliability
-                                    for financial transactions.
-                                    <h5 class="heading-5 mt-3">Python &nbsp; Django &nbsp; DRF</h5>
-                                </div>
-                            </div>
-                            <div class="project-box"> 
-                                <div class="project-box__link">
-                                    <!-- <a href="https://github.com/Onyenso/mail" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        View source code <img src="github.a1bad59c.svg" alt="github logo">
-                                    </a> -->
-                                </div>
-                                <div class="project-box__content">
-                                    <h3 class="heading-3">Simone</h3>
-                                    Simone by Dukka is an enterprise-wide application used internally to keep track of all terminal devices
-                                    that comes into the company and used to manage them throughout their life cycle. This includes keeping
-                                    track of which merchants they are sold to, how much is being processed and amount of revenue generated
-                                    by the terminal. The system also provides inventory management capabilities, ensuring that the company
-                                    has the right number of devices in stock at all times. Additionally, the system was designed to incorporate
-                                    a robust security framework, with roles and permissions implemented to ensure that only authorized personnel
-                                    can perform certain actions.
-                                    <h5 class="heading-5 mt-5">HTML/CSS &nbsp; Python &nbsp; JavaScript</h5>
                                 </div>
                             </div>
                             <div class="project-box"> 
