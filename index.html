@@ -1,312 +1,495 @@
-
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Onyenso Uchenna</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="YD logo.svg">
-        <meta name="theme-color" content="#000000">
-        <meta name="description" content="Onyenso Uchenna">
-        <meta name="Keywords" content="Onyenso Uchenna, Portfolio, Front-End Developer, Back-End Developer, Developer, Full Stack Developer, Software Engineer, Nigeria, Lagos">
-        <meta property="og:site_name" content="yensodev.netlify.app">
-        <meta property="og:title" content="Onyenso Uchenna">
-        <meta property="og:description" content="Full-stack Web Programmer">
-        <meta property="og:image" itemprop="image" content="card.532ab2cb.png">
-        <meta property="og:type" content="website">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:site" content="@yensouchenna">
-        <meta name="twitter:creator" content="@yensouchenna">
-        <meta name="twitter:title" content="yensodev.netlify.app">
-        <meta name="twitter:description" content="I build applications for the web.">
-        <meta name="twitter:image" content="card.532ab2cb.png">
-        <meta name="twitter:app:country" content="NG">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="yensodev.css">
-        <style>
-            .material-symbols-outlined {
-                font-variation-settings:
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uchenna J. Onyenso</title>
+    <link rel="icon" type="image/svg+xml" href="AD Logo.svg">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Uchenna J. Onyenso">
+    <meta name="Keywords"
+        content="Uchenna J. Onyenso, Portfolio, Front-End Developer, Back-End Developer, Developer, Full Stack Developer, Software Engineer, Nigeria, Lagos">
+    <meta property="og:site_name" content="alphadev.netlify.app">
+    <meta property="og:title" content="Uchenna J. Onyenso">
+    <meta property="og:description" content="Full-stack Web Programmer">
+    <meta property="og:image" itemprop="image" content="card.532ab2cb.png">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@yensouchenna">
+    <meta name="twitter:creator" content="@yensouchenna">
+    <meta name="twitter:title" content="alphadev.netlify.app">
+    <meta name="twitter:description" content="I build applications for the web.">
+    <meta name="twitter:image" content="card.532ab2cb.png">
+    <meta name="twitter:app:country" content="NG">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="alphadev.css">
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
                 'FILL' 0,
                 'wght' 400,
                 'GRAD' 0,
                 'opsz' 48
-            }
+        }
 
-            .row {
+        .row {
             display: flex;
-            }
+        }
 
-            .column {
+        .column {
             flex: 1;
             padding: 10px;
             text-align: start;
             /* background-color: #f2f2f2; */
+        }
+
+        @media (max-width: 768px) {
+            .column {
+                flex: 100%;
             }
-            
-            @media (max-width: 768px) {
-                .column {
-                    flex: 100%;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <div class="preloader">
-            <svg id="logo" width="320" height="104" viewBox="0 0 700 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M50.592 103.008C41.28 103.008 32.784 100.848 25.104 96.528C17.424 92.112 11.328 86.016 6.81599 78.24C2.39999 70.368 0.191986 61.536 0.191986 51.744C0.191986 41.952 2.39999 33.168 6.81599 25.392C11.328 17.52 17.424 11.424 25.104 7.104C32.784 2.688 41.28 0.48 50.592 0.48C60 0.48 68.544 2.688 76.224 7.104C83.904 11.424 89.952 17.472 94.368 25.248C98.784 33.024 100.992 41.856 100.992 51.744C100.992 61.632 98.784 70.464 94.368 78.24C89.952 86.016 83.904 92.112 76.224 96.528C68.544 100.848 60 103.008 50.592 103.008ZM50.592 91.632C57.6 91.632 63.888 90 69.456 86.736C75.12 83.472 79.536 78.816 82.704 72.768C85.968 66.72 87.6 59.712 87.6 51.744C87.6 43.68 85.968 36.672 82.704 30.72C79.536 24.672 75.168 20.016 69.6 16.752C64.032 13.488 57.696 11.856 50.592 11.856C43.488 11.856 37.152 13.488 31.584 16.752C26.016 20.016 21.6 24.672 18.336 30.72C15.168 36.672 13.584 43.68 13.584 51.744C13.584 59.712 15.168 66.72 18.336 72.768C21.6 78.816 26.016 83.472 31.584 86.736C37.248 90 43.584 91.632 50.592 91.632Z" stroke="#09f755" stroke-width="2"/>
-                <path d="M197.203 102H184.099L131.395 22.08V102H118.291V1.488H131.395L184.099 81.264V1.488H197.203V102Z" stroke="#09f755" stroke-width="2"/>
-                <path d="M289.813 1.632L257.125 64.128V102H244.021V64.128L211.189 1.632H225.733L250.501 52.464L275.269 1.632H289.813Z" stroke="#09f755" stroke-width="2"/>
-                <path d="M316.739 12.288V45.84H353.315V56.64H316.739V91.2H357.635V102H303.635V1.488H357.635V12.288H316.739Z" stroke="#09f755" stroke-width="2"/>
-                <path d="M456.375 102H443.271L390.567 22.08V102H377.463V1.488H390.567L443.271 81.264V1.488H456.375V102Z" stroke="#09f755" stroke-width="2"/>
-                <path d="M510.537 103.008C503.913 103.008 497.961 101.856 492.681 99.552C487.497 97.152 483.417 93.888 480.441 89.76C477.465 85.536 475.929 80.688 475.833 75.216H489.801C490.281 79.92 492.201 83.904 495.561 87.168C499.017 90.336 504.009 91.92 510.537 91.92C516.777 91.92 521.673 90.384 525.225 87.312C528.873 84.144 530.697 80.112 530.697 75.216C530.697 71.376 529.641 68.256 527.529 65.856C525.417 63.456 522.777 61.632 519.609 60.384C516.441 59.136 512.169 57.792 506.793 56.352C500.169 54.624 494.841 52.896 490.809 51.168C486.873 49.44 483.465 46.752 480.585 43.104C477.801 39.36 476.409 34.368 476.409 28.128C476.409 22.656 477.801 17.808 480.585 13.584C483.369 9.36 487.257 6.09599 492.249 3.792C497.337 1.488 503.145 0.335999 509.673 0.335999C519.081 0.335999 526.761 2.688 532.713 7.392C538.761 12.096 542.169 18.336 542.937 26.112H528.537C528.057 22.272 526.041 18.912 522.489 16.032C518.937 13.056 514.233 11.568 508.377 11.568C502.905 11.568 498.441 13.008 494.985 15.888C491.529 18.672 489.801 22.608 489.801 27.696C489.801 31.344 490.809 34.32 492.825 36.624C494.937 38.928 497.481 40.704 500.457 41.952C503.529 43.104 507.801 44.448 513.273 45.984C519.897 47.808 525.225 49.632 529.257 51.456C533.289 53.184 536.745 55.92 539.625 59.664C542.505 63.312 543.945 68.304 543.945 74.64C543.945 79.536 542.649 84.144 540.057 88.464C537.465 92.784 533.625 96.288 528.537 98.976C523.449 101.664 517.449 103.008 510.537 103.008Z" stroke="#09f755" stroke-width="2"/>
-                <path d="M608.733 103.008C599.421 103.008 590.925 100.848 583.245 96.528C575.565 92.112 569.469 86.016 564.957 78.24C560.541 70.368 558.333 61.536 558.333 51.744C558.333 41.952 560.541 33.168 564.957 25.392C569.469 17.52 575.565 11.424 583.245 7.104C590.925 2.688 599.421 0.48 608.733 0.48C618.141 0.48 626.685 2.688 634.365 7.104C642.045 11.424 648.093 17.472 652.509 25.248C656.925 33.024 659.133 41.856 659.133 51.744C659.133 61.632 656.925 70.464 652.509 78.24C648.093 86.016 642.045 92.112 634.365 96.528C626.685 100.848 618.141 103.008 608.733 103.008ZM608.733 91.632C615.741 91.632 622.029 90 627.597 86.736C633.261 83.472 637.677 78.816 640.845 72.768C644.109 66.72 645.741 59.712 645.741 51.744C645.741 43.68 644.109 36.672 640.845 30.72C637.677 24.672 633.309 20.016 627.741 16.752C622.173 13.488 615.837 11.856 608.733 11.856C601.629 11.856 595.293 13.488 589.725 16.752C584.157 20.016 579.741 24.672 576.477 30.72C573.309 36.672 571.725 43.68 571.725 51.744C571.725 59.712 573.309 66.72 576.477 72.768C579.741 78.816 584.157 83.472 589.725 86.736C595.389 90 601.725 91.632 608.733 91.632Z" stroke="#09f755" stroke-width="2"/>
-            </svg>
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preloader">
+        <svg id="logo" width="320" height="104" viewBox="0 0 700 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M58.8719 3.19998L59.4695 4.84842L94.6092 101.869L95.8231 105.22H77.0633L76.4676 103.569L69.2234 83.5203H30.1727L22.9295 103.569L22.3338 105.22H3.56915L4.78888 101.866L40.0692 4.84549L40.6678 3.19998H58.8719ZM35.6082 68.1599H63.7889L49.6981 28.7976L35.6082 68.1599Z"
+                stroke="#09f755" stroke-width="2" />
+            <path d="M122.875 2.63998V89.8597H157.035V105.22H105.134V2.63998H122.875Z" stroke="#09f755"
+                stroke-width="2" />
+            <path
+                d="M199.564 2.63998C210.94 2.63998 219.999 5.38565 226.316 11.2796L226.901 11.8314C232.85 17.5816 235.804 24.9369 235.804 33.6996C235.804 42.465 232.751 49.8908 226.641 55.7972V55.7982C220.484 61.7463 211.287 64.4798 199.564 64.4798H183.304V105.22H165.564V2.63998H199.564ZM183.304 48.9798H199.564C206.366 48.9798 210.854 47.4925 213.554 45.0169C216.274 42.5236 217.784 38.8791 217.784 33.6996C217.784 28.1614 216.212 24.4363 213.462 22.0394C210.646 19.5852 206.163 18.14 199.564 18.14H183.304V48.9798Z"
+                stroke="#09f755" stroke-width="2" />
+            <path
+                d="M264.379 2.63998V45.4798H309.079V2.63998H326.818V105.22H309.079V60.9798H264.379V105.22H246.638V2.63998H264.379Z"
+                stroke="#09f755" stroke-width="2" />
+            <path
+                d="M391.645 3.19998L392.243 4.84842L427.383 101.869L428.596 105.22H409.837L409.241 103.569L401.997 83.5203H362.946L355.703 103.569L355.107 105.22H336.343L337.562 101.866L372.843 4.84549L373.441 3.19998H391.645ZM368.382 68.1599H396.562L382.471 28.7976L368.382 68.1599Z"
+                stroke="#09f755" stroke-width="2" />
+            <path
+                d="M470.788 2.63998C481.741 2.63998 491.346 4.7062 499.518 8.93979H499.517C507.766 13.0713 514.105 19.0524 518.461 26.8626L518.871 27.599C523.044 35.2462 525.088 44.1199 525.088 54.14C525.088 64.4833 522.911 73.6052 518.461 81.4173C514.097 89.1488 507.746 95.0864 499.486 99.2162L499.475 99.221C491.314 103.253 481.725 105.22 470.788 105.22H437.908V2.63998H470.788ZM455.648 89.7201H470.788C482.955 89.7201 491.838 86.5284 497.852 80.5189C503.896 74.3866 507.068 65.7094 507.068 54.14C507.068 42.4791 503.851 33.7046 497.708 27.4759L497.702 27.4691L497.696 27.4632C491.675 21.2729 482.842 18.0003 470.788 18.0003H455.648V89.7201Z"
+                stroke="#09f755" stroke-width="2" />
+            <path
+                d="M594.392 2.5V18H554.633V45.6201H590.192V61.1201H554.633V89.7197H594.392V105.22H536.892V2.5H594.392Z"
+                stroke="#09f755" stroke-width="2" />
+            <path
+                d="M618.8 2.63998L619.398 4.28452L647.709 81.9769L676.02 4.28452L676.62 2.63998H695.425L694.148 6.0228L657.329 103.603L656.719 105.22H638.56L637.951 103.603L601.131 6.0228L599.854 2.63998H618.8Z"
+                stroke="#09f755" stroke-width="2" />
+        </svg>
+    </div>
+    <div class="cursor"></div>
+    <div class="nav-container">
+        <div class="nav-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
-        <div class="cursor"></div>
-        <div class="nav-container"> 
-            <div class="nav-icon"> 
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div> 
-            <nav class="nav-main">
-                <div class="box-wrapper">
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                    <div class="box"></div>
-                </div>
-                <!-- <img class="mobile-logo" height="40px" src="YD logo.svg" alt="yensodev logo"> -->
-                <div class="nav-main__content">
-                    <div class="nav-main__content--box">
-                        <h4 class="heading-4">Let's Connect🤝🏾🌐</h4>
-                        <div class="social-links">
-                            <div class="social-links--box">
-                                <a href="https://github.com/Onyenso"><img src="github.a1bad59c.svg" alt="github"></a>
-                            </div>
-                            <div class="social-links--box">
-                                <a href="https://twitter.com/yensouchenna"><img src="twitter.581e1f11.svg" alt="twitter"></a>
-                                <a href="https://www.linkedin.com/in/onyenso/"><img src="linkedin.5f3fc4ea.svg" alt="linkedin"></a> 
-                                <a href="https://www.instagram.com/yensouchenna/"><img src="instagram.438bb1a6.svg" alt="instagram"></a>
-                            </div> 
+        <nav class="nav-main">
+            <div class="box-wrapper">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <!-- <img class="mobile-logo" height="40px" src="AD Logo.svg" alt="alphadev logo"> -->
+            <div class="nav-main__content">
+                <div class="nav-main__content--box">
+                    <h4 class="heading-4">Let's Connect🤝🏾🌐</h4>
+                    <div class="social-links">
+                        <div class="social-links--box">
+                            <a href="https://github.com/Onyenso"><img src="github.a1bad59c.svg" alt="github"></a>
                         </div>
-                        <!-- <a class="resume" href="Uchenna J. Onyenso VII.pdf" target="_blank" rel="noopener noreferrer">Resume 📗</a> -->
+                        <div class="social-links--box">
+                            <a href="https://twitter.com/yensouchenna"><img src="twitter.581e1f11.svg"
+                                    alt="twitter"></a>
+                            <a href="https://www.linkedin.com/in/onyenso/"><img src="linkedin.5f3fc4ea.svg"
+                                    alt="linkedin"></a>
+                            <a href="https://www.instagram.com/yensouchenna/"><img src="instagram.438bb1a6.svg"
+                                    alt="instagram"></a>
+                        </div>
                     </div>
-                    <div class="nav-main__content--box">
-                        <h4 class="heading-4">navigation</h4>
-                        <ul class="list">
-                            <li class="list__item"><a href="#home" class="list__link">Home</a></li>
-                            <li class="list__item"><a href="#projec" class="list__link">projects</a></li>
-                            <li class="list__item"><a href="#contact" class="list__link">contact</a></li>
-                        </ul> 
-                    </div>
+                    <a class="resume" href="Uchenna Onyenso XIV.pdf" target="_blank" rel="noopener noreferrer">CV 📗</a>
                 </div>
-            </nav>
-            <nav class="nav-sub">
-                <picture> 
-                    <!-- <source media="(max-width:37.5em)" srcset="YD logo-mobile.24d5e228.svg"> -->
-                    <!-- <img height="40px" src="YD logo.svg" alt="onyenso yensodev logo"> -->
-                </picture>
-            </nav>
-        </div>
-        <div class="smooth-scroll-wrappe">
-            <section class="content">
-                <header id="home" class="header">
-                    <div class="hero">
-                        <h5 class="heading-5">Hi there👋, I am</h5>
-                        <h1>UCHENNA JOSEPH ONYENSO.</h1>
-                        <h4 class="heading-4 pri-color mt-s mb-s">Back-end PROGRAMMER 👨‍💻</h4>
-                        <a href="#contact" class="cta">hire me</a>
+                <div class="nav-main__content--box">
+                    <h4 class="heading-4">navigation</h4>
+                    <ul class="list">
+                        <li class="list__item"><a href="#home" class="list__link">Home</a></li>
+                        <li class="list__item"><a href="#experience" class="list__link">experience</a></li>
+                        <li class="list__item"><a href="#projec" class="list__link">projects</a></li>
+                        <li class="list__item"><a href="#contact" class="list__link">contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-sub">
+            <picture>
+                <!-- <source media="(max-width:37.5em)" srcset="YD logo-mobile.24d5e228.svg"> -->
+                <!-- <img height="40px" src="AD Logo.svg" alt="onyenso alphadev logo"> -->
+            </picture>
+        </nav>
+    </div>
+    <div class="smooth-scroll-wrappe">
+        <section class="content">
+            <header id="home" class="header">
+                <div class="hero">
+                    <h5 class="heading-5">Hi there👋, I am</h5>
+                    <h1>UCHENNA JOSEPH ONYENSO.</h1>
+                    <h4 class="heading-4 pri-color mt-s mb-s">Back-end PROGRAMMER 👨‍💻</h4>
+                    <a href="#contact" class="cta">hire me</a>
+                </div>
+            </header>
+
+            <main>
+                <section id="projects" class="project">
+                    <h2 class="heading-2">A bit about me</h2>
+                    <p class="">
+                        Proficient in back-end programming, with extensive experience using Python, Django, and SQL.
+                        Comfortable with front-end technologies, specifically JavaScript, HTML, and CSS.
+                        I admire —and I practice— simplicity, clear documentation, effective communication, and
+                        extensive test coverage, among other best practices for software engineering.
+                        I am very passionate about self-development.
+                        Apart from programming, I enjoy playing chess and table tennis.
+                        <hr>
+                    <div class="mb--5 pb-5">
+                        A fun fact about me (maybe): I am a huge fan of the Game of Thrones franchise. I have seen the
+                        series
+                        3 times and I am currently reading the books🙂.
                     </div>
-                </header> 
-                
-                <main>
-                    <section id="projects" class="project">
-                        <h2 class="heading-2">A bit about me</h2>
-                        <p class="">
-                            Proficient in back-end programming, with extensive experience using Python, Django, and SQL. I'm also
-                            comfortable with front-end technologies, specifically JavaScript, HTML, and CSS, so skills and experience cover full-stack development.
-                            I thrive in collaborative environments and enjoy working on projects that
-                            require technical expertise and creative problem-solving. I am also committed to staying up-to-date
-                            with the latest trends and best practices in web development, and I'm always seeking new opportunities
-                            to learn and grow. I am passionate about self-development.
-                            Apart from coding, I enjoy playing chess and table tennis.
-                            <hr>
-                            <div class="mb--5 pb-5">
-                                A fun fact about me (maybe): I am a huge fan of the Game of Thrones franchise. I have watched the series
-                                3 times and I am currently reading the books🙂.
+                    </p>
+                    <div class="row">
+                        <div class="column">
+                            <h2 class="heading-2">Tech stack</h2>
+                            <ul>
+                                <li>Python</li>
+                                <li>Django</li>
+                                <li>SQL</li>
+                                <li>JavaScript</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Git</li>
+                                <li>PostgreSQL</li>
+                                <li>Docker</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2 class="heading-2">Industry knowledge</h2>
+                            <ul>
+                                <li>Agile Methodology</li>
+                                <li>Data Structures</li>
+                                <li>Algorithm Analysis</li>
+                                <li>Async Programming</li>
+                                <li>Programming</li>
+                                <li>Microservices</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h2 class="heading-2">Soft skills</h2>
+                            <ul>
+                                <li>Oral and Written Communication</li>
+                                <li>Team Building</li>
+                                <li>Leadership and Management</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5 class="heading-5 sec-color mb-s" id="experience">experience &mdash;</h5>
+                    <h2 class="heading-2 mb-l">Where I've been 💼</h2>
+                    <div class="experience-wrapper">
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title-row">
+                                    <h3 class="heading-3 experience-title">Senior Back-end Developer</h3>
+                                    <span class="experience-period">Aug 2025 - Present</span>
+                                </div>
+                                <h4 class="heading-4 experience-company">RingFree Communications</h4>
+                                <p class="experience-location">Charlotte, North Carolina, United States (Remote)</p>
                             </div>
-                        </p>
-                        <div class="row">
-                            <div class="column">
-                                <h2 class="heading-2">Tech stack</h2>
-                                <ul>
-                                    <li>Python</li>
-                                    <li>Django</li>
-                                    <li>SQL</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Git</li>
-                                    <li>PostgreSQL</li>
-                                    <li>RabbitMQ</li>
-                                </ul>
+                            <ul class="experience-details">
+                                <li>Architected and implemented a dynamic call flow builder feature, enabling customers
+                                    to design custom VoIP routing logic through a visual interface.</li>
+                                <li>Implemented a comprehensive activity logging system to track and audit user actions
+                                    across the platform, improving security compliance and providing customers with
+                                    detailed operational visibility.</li>
+                                <li>Contributed to frontend development using Vue.js and Vuetify 3 when needed, ensuring
+                                    cohesive full-stack feature delivery.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title-row">
+                                    <h3 class="heading-3 experience-title">Senior Back-end Developer</h3>
+                                    <span class="experience-period">Oct 2024 - Aug 2025</span>
+                                </div>
+                                <h4 class="heading-4 experience-company">Assist Factory</h4>
+                                <p class="experience-location">Sheridan, Wyoming, United States (Remote)</p>
                             </div>
-                            <div class="column">
-                                <h2 class="heading-2">Industry knowledge</h2>
-                                <ul>
-                                    <li>Microservices</li>
-                                    <li>Agile Methodology</li>
-                                    <li>Data Structures</li>
-                                    <li>Algorithm Analysis</li>
-                                    <li>Full-stack Web Developement</li>
-                                    <li>Programming</li>
-                                </ul>
-                            </div>
-                            <div class="column">
-                                <h2 class="heading-2">Soft skills</h2>
-                                <ul>
-                                    <li>Oral and Written Communication</li>
-                                    <li>Team Building</li>
-                                    <li>Leadership and Management</li>
-                                </ul>
+                            <p class="experience-summary">Led the backend development of Assist Factory, a platform
+                                designed to connect clients with virtual assistants (VAs) and manage task-based service
+                                delivery. My responsibilities spanned across backend architecture, API development,
+                                third-party integrations, and system security.</p>
+                            <ul class="experience-details">
+                                <li>Implemented a multi-gateway payment infrastructure with support for Flutterwave,
+                                    Paystack and Stripe, using a strategy pattern architecture to encapsulate
+                                    gateway-specific logic and maintain a unified transaction lifecycle.</li>
+                                <li>Built role-based access system with polymorphic profiles for the 3 different user
+                                    types (Client, VA, and Admin) with a fine-grained permission logic.</li>
+                                <li>Implemented instant chat messaging using websockets for seamless in-app
+                                    communication between clients and VAs.</li>
+                                <li>Implemented virtual meeting scheduling and calendar integration with Google Meet and
+                                    Google Calendar. Designed OAuth2 authentication, including encrypted token storage
+                                    using symmetric encryption and seamless refresh logic for protected resource access.
+                                </li>
+                                <li>Developed a complete invoice and payment flow, including secure webhook handling,
+                                    API-based transaction verification, and audit logging.</li>
+                                <li>Implemented a referral rewards system, automatically validating and completing
+                                    referrals based on payment activity and user engagement.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title-row">
+                                    <h3 class="heading-3 experience-title">Back-end Programmer</h3>
+                                    <span class="experience-period">Nov 2024 - May 2025</span>
+                                </div>
+                                <h4 class="heading-4 experience-company">WHOT STUDIOS</h4>
+                                <p class="experience-location">Lagos, Lagos State, Nigeria (Remote)</p>
                             </div>
                         </div>
 
-                        <h5 class="heading-5 sec-color mb-s" id="projec">featured projects &mdash;</h5>
-                        <h2 class="heading-2">Some stuff I've worked on 📁</h2>
-                        <div class="project-box__wrapper">
-                            <div class="project-box">
-                                <div class="project-box__link" style="width: 100%;">
-                                    <!-- <a href="https://github.com/Onyenso/YensoGram-v2.0" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Source code <img src="github.a1bad59c.svg" alt="github logo">
-                                    </a> -->
-                                    <a href="https://play.google.com/store/apps/details?id=com.dukka.dukka&pcampaignid=web_share" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Live project
-                                    </a>
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title-row">
+                                    <h3 class="heading-3 experience-title">Back-end Programmer</h3>
+                                    <span class="experience-period">Aug 2020 - Nov 2024</span>
                                 </div>
-                                <div class="project-box__content">
-                                    <h3 class="heading-3">Dukka</h3>
-                                    Dukka is an application that provides small business merchants with all they'll need for proper bookkeeping,
-                                    inventory management, payment acceptance and POS terminal management. Using Dukka, they can record sales, expenses,
-                                    create receipts, see profits and losses, create virtual accounts and wallets among other things. I implemented
-                                    the APIs that made the wallets, virtual accounts and payment acceptance possible. In collaboration with partner commercial banks,
-                                    I was able to integrate their APIs with our system to make these work.
-                                    <h5 class="heading-5 mt-5">Python &nbsp; Django &nbsp; DRF</h5>
-                                </div>
+                                <h4 class="heading-4 experience-company">Dukka</h4>
+                                <p class="experience-location">Lagos, Lagos State, Nigeria (Hybrid)</p>
                             </div>
-                            <div class="project-box">
-                                <div class="project-box__link" style="width: 100%;">
-                                    <a href="https://github.com/Onyenso/Switch-Vibes" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Source code <img src="github.a1bad59c.svg" alt="github logo">
-                                    </a>
-                                    <a href="https://switch-vibes-production.up.railway.app/docs/" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Live project
-                                    </a>
+                            <p class="experience-summary">Implemented multiple key projects including:</p>
+                            <ul class="experience-details">
+                                <li><strong>Dvault API:</strong> Led development of a digital wallet API service,
+                                    enabling creation of virtual accounts and real-time fund transfers. Integrated KYC
+                                    verification, transaction logs, and reconciliation tools.
+                                    <ul class="experience-achievements">
+                                        <li>Generated over ₦25 million in revenue till date.</li>
+                                        <li>Reduced wallet integration time by 40% for partner apps via robust
+                                            documentation and modular architecture.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Dukka App:</strong> Engineered core payment and wallet APIs for a POS and
+                                    bookkeeping platform used by 50,000+ merchants.
+                                    <ul class="experience-achievements">
+                                        <li>Integrated partner bank APIs for virtual account creation and payment
+                                            routing.</li>
+                                        <li>Designed async transaction processing pipeline using RabbitMQ, reducing
+                                            latency by 30%.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Dash App:</strong> A mobile marketplace where users can buy from various
+                                    vendors. They can also pay directly on the app from their virtual account which they
+                                    create on the app. I implemented the microservice responsible for realtime
+                                    notifications in this app. I also implemented the APIs responsible for wallets and
+                                    virtual accounts creation.</li>
+                            </ul>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-header">
+                                <div class="experience-title-row">
+                                    <h3 class="heading-3 experience-title">Full-stack Developer</h3>
+                                    <span class="experience-period">Nov 2023 - May 2024</span>
                                 </div>
-                                <div class="project-box__content">
-                                    <h3 class="heading-3">SwitchVibes</h3>
-                                    The back-end API service for SwitchVibes, a platform that enables smooth music playlist migration between different
-                                    music streaming services. Simply provide the link of a playlist from your favorite source platform (e.g., Spotify),
-                                    and SwitchVibes will automatically transfer all the songs to a new playlist in your specified destination platform.
-                                    Eliminate manual playlist recreation and let SwitchVibes do the heavy lifting for you.
-                                    <h5 class="heading-5 mt-5">Python &nbsp; Django &nbsp; DRF</h5>
-                                </div>
+                                <h4 class="heading-4 experience-company">TafiCasa</h4>
+                                <p class="experience-location">Lagos, Nigeria (Remote)</p>
                             </div>
-                            <div class="project-box">
-                                <div class="project-box__link" style="width: 100%;">
-                                    <!-- <a href="https://github.com/Onyenso/YensoGram-v2.0" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Source code <img src="github.a1bad59c.svg" alt="github logo">
-                                    </a> -->
-                                    <a href="https://play.google.com/store/apps/details?id=com.dukka.dash_app&pcampaignid=web_share" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        Live project
-                                    </a>
-                                </div>
-                                <div class="project-box__content">
-                                    <h3 class="heading-3">Dash</h3>
-                                    Dash is a mobile marketplace where users can buy from various vendors. They can also pay directly
-                                    on the app from their virtual account which they create on the app. I implemented the microservice
-                                    responsible for realtime notifications in this app. I also implemented the APIs responsible for wallets
-                                    and virtual accounts creation.
-                                    <h5 class="heading-5 mt-5">Python &nbsp; Django &nbsp; DRF</h5>
-                                </div>
+                            <p class="experience-summary">Worked as part of the team that built Flux, our flagship
+                                product that enables businesses to digitally manage product transfers, secure pickups,
+                                and supply chains. Using digital receipts, AI automation, and real-time tracking, it
+                                optimizes procurement, logistics, and inventory management across various industries.
+                            </p>
+                            <ul class="experience-details">
+                                <li>Implemented the ATC issuing and endorsement feature. This allows organizations to
+                                    transfer ownership of goods and other organizations to secure these goods. This
+                                    process involves approvals, verifications etc.</li>
+                                <li>Implemented the RBAC (Role-Based Access Control) feature that gives organizations
+                                    the ability to create and assign granular permissions to employees. This enables a
+                                    systematic flow of goods from one authority to another and reduces manual paperwork
+                                    by 80%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5 class="heading-5 sec-color mb-s mt-l" id="projec">featured projects &mdash;</h5>
+                    <h2 class="heading-2">Some stuff I've worked on 📁</h2>
+                    <div class="project-box__wrapper">
+                        <div class="project-box">
+                            <div class="project-box__link" style="width: 100%;">
+                                <a href="https://assistfactory.com/" class="btn btn-info btn-lg" target="_blank"
+                                    rel="noopener noreferrer">
+                                    Live project
+                                </a>
                             </div>
-                            <div class="project-box"> 
-                                <div class="project-box__link" style="width: 100%;">
-                                    <a href="https://github.com/Onyenso/cs50-projects" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
-                                        View source code <img src="github.a1bad59c.svg" alt="github logo">
-                                    </a>
-                                </div>
-                                <div class="project-box__content">
-                                    <h3 class="heading-3">CS50 Projects</h3>
-                                    Random projects I did for Harvard University's CS50 course. 
-                                    <h5 class="heading-5 mt-5">C &nbsp; Python &nbsp; SQL</h5>
-                                </div>
-                            </div>
-                            <div class="project-box"> 
-                                <div class="project-box__content" style="position: absolute; top: 50%;">
-                                    <h3 class="heading-3">View my other projects <a href="https://github.com/Onyenso?tab=repositories" target="_blank">here</a>.</h3>
-                                </div>
+                            <div class="project-box__content">
+                                <h3 class="heading-3">Assist Factory</h3>
+                                Assist Factory is a service that matches businesses, founders, and busy professionals
+                                with trained virtual assistants so they can offload
+                                repetitive work (admin, customer support, scheduling, marketing tasks) without hiring or
+                                managing staff. It solves the overhead and friction
+                                of hiring — freeing founders to focus on growth while a vetted remote team handles
+                                day-to-day tasks.
+                                <h5 class="heading-5 mt-5">Python | Django | PostgreSQL | Webhooks | Payment Gateways |
+                                    Websockets | Redis</h5>
                             </div>
                         </div>
-                    </section>
-                    <section class="web">
-                        <h2 class="heading-2">Let's Connect🤝🏾🌐</h2>
-                        <div class="web-box__wrapper">
-                            <div class="web-box">
-                                <a href="https://github.com/Onyenso" target="_blank" rel="noopener noreferrer"><img src="github-web.07161e96.svg" alt="github">github</a>
+                        <div class="project-box">
+                            <div class="project-box__link" style="width: 100%;">
+                                <!-- <a href="https://github.com/Onyenso/YensoGram-v2.0" class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                        Source code <img src="github.a1bad59c.svg" alt="github logo">
+                                    </a> -->
+                                <a href="https://www.taficasa.com/flux" class="btn btn-info btn-lg" target="_blank"
+                                    rel="noopener noreferrer">
+                                    Live project
+                                </a>
                             </div>
-                            <div class="web-box">
-                                <a href="https://www.linkedin.com/in/onyenso/" target="_blank" rel="noopener noreferrer"><img src="linkedin.5f3fc4ea.svg" alt="linkedin">linkedin</a>
-                            </div>
-                            <div class="web-box">
-                                <a href="https://alphadevvv.hashnode.dev" target="_blank" rel="noopener noreferrer"><img src="hashnode-logo2.svg" alt="twitter">blog</a>
-                            </div>
-                            <div class="web-box">
-                                <a href="https://twitter.com/yensouchenna" target="_blank" rel="noopener noreferrer"><img src="twitter.581e1f11.svg" alt="twitter">twitter</a>
-                            </div>
-                            <div class="web-box">
-                                <a href="https://www.instagram.com/yensouchenna/" target="_blank" rel="noopener noreferrer"><img src="instagram.438bb1a6.svg" alt="instagram">instagram</a>
+                            <div class="project-box__content">
+                                <h3 class="heading-3">Flux</h3>
+                                Flux is a supply-chain orchestration platform from TafiCasa that digitizes product
+                                ownership, pickup workflows,
+                                and inventory-backed lending so merchants, manufacturers and entities can track physical
+                                goods. It centralises real-time visibility,
+                                digital approvals, and pickup/product movement tracking so stakeholders (merchants,
+                                distributors, banks etc.) share a single auditable
+                                source of truth — eliminating manual signatures, fragmented emails, and opaque
+                                financing.
+                                <h5 class="heading-5 mt-5">Python | Django | DRF | Celery | PostgreSQL | Redis </h5>
                             </div>
                         </div>
-                    </section>
-                    <section id="contact" class="contact">
-                        <h5 class="heading-5 sec-color mb-s">contact &mdash;</h5>
-                        <h2 class="heading-2">look who’s here 😁</h2>
-                            <div class="contact-box__wrapper">
-                                <div class="contact-box">
-                                    <h5 class="heading-5 sec-color mb-s">email📧</h5>
-                                    <a href="mailto:alphadev.onyenso@gmail.com" target="_blank" rel="nofollow noopener noreferrer">alphadev.onyenso@gmail.com</a><br>
-                                    <!-- <a href="mailto:yensoroutebird@gmail.com" target="_blank" rel="nofollow noopener noreferrer">yensoroutebird@gmail.com</a> -->
-                                </div>
-                                <div class="contact-box">
-                                    <h5 class="heading-5 sec-color mb-s">phone🇳🇬</h5>
-                                    <a href="tel:+2349082976912">+(234) 908 297  6912</a>
-                                </div>
+                        <div class="project-box">
+                            <div class="project-box__link mb-s" style="width: 100%;">
+                                <a href="https://play.google.com/store/apps/details?id=com.dukka.dukka&pcampaignid=web_share"
+                                    class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                    Live project
+                                </a>
                             </div>
-                    </section>
-                </main>
-                <footer class="footer">
-                    <h5 class="heading-5">© 2021 Onyenso Uchenna Joseph</h5>
-                </footer>
-            </section>
-        </div>
-        <script>
-            var e=document.body, t=document.getElementsByClassName("smooth-scroll-wrapper")[0], n=t.getBoundingClientRect().height-"100px", a=.08, o=0;
-            function r(){
-                var e="translateY(-"+(o+=(window.pageYOffset-o)*a)+"px) translateZ(0)";
-                t.style.transform=e, callScroll=requestAnimationFrame(r)
-            }
-            e.style.height=Math.floor(n)+"px", r();
-            var s=document.querySelector("section"), l=window.pageYOffset, i=function e(){
-                var t=window.pageYOffset, n=.2*(t-l);
-                s.style.transform="skewY("+n+"deg)", l=t, requestAnimationFrame(e)
-            };
-            i();
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
-        <script src="yensodev.js"></script>
-    </body>
+                            <div class="project-box__content">
+                                <h3 class="heading-3">Dukka</h3>
+                                Dukka is an application that provides small business merchants with all they'll need for
+                                proper bookkeeping,
+                                inventory management, payment acceptance and POS terminal management. Using Dukka, they
+                                can record sales, expenses,
+                                create receipts, see profits and losses, create virtual accounts and wallets among other
+                                things. I implemented
+                                the APIs that made the wallets, virtual accounts and payment acceptance possible. In
+                                collaboration with partner commercial banks,
+                                I was able to integrate their APIs with our system to make these work.
+                                <h5 class="heading-5 mt-5">Python | Django | Microservices | RabbitMQ | PostgreSQL |
+                                    Payment Gateways</h5>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <div class="project-box__link" style="width: 100%;">
+                                <a href="https://github.com/Onyenso/Switch-Vibes" class="btn btn-info btn-lg"
+                                    target="_blank" rel="noopener noreferrer">
+                                    Source code <img src="github.a1bad59c.svg" alt="github logo">
+                                </a>
+                                <a href="https://switch-vibes-production.up.railway.app/docs/"
+                                    class="btn btn-info btn-lg" target="_blank" rel="noopener noreferrer">
+                                    Live project
+                                </a>
+                            </div>
+                            <div class="project-box__content">
+                                <h3 class="heading-3">SwitchVibes</h3>
+                                The back-end API service for SwitchVibes, a platform that enables smooth music playlist
+                                migration between different
+                                music streaming services. Simply provide the link of a playlist from your favorite
+                                source platform (e.g., Spotify),
+                                and SwitchVibes will automatically transfer all the songs to a new playlist in your
+                                specified destination platform.
+                                Eliminate manual playlist recreation and let SwitchVibes do the heavy lifting for you.
+                                <h5 class="heading-5 mt-5">Python | Django | DRF | Websockets | Async Programming</h5>
+                            </div>
+                        </div>
+                        <div class="project-box">
+                            <div class="project-box__content" style="position: absolute; top: 50%;">
+                                <h3 class="heading-3">View my other projects <a
+                                        href="https://github.com/Onyenso?tab=repositories" target="_blank">here</a>.
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="web">
+                    <h2 class="heading-2">Let's Connect🤝🏾🌐</h2>
+                    <div class="web-box__wrapper">
+                        <div class="web-box">
+                            <a href="https://github.com/Onyenso" target="_blank" rel="noopener noreferrer"><img
+                                    src="github-web.07161e96.svg" alt="github">github</a>
+                        </div>
+                        <div class="web-box">
+                            <a href="https://www.linkedin.com/in/uche-onyenso/" target="_blank"
+                                rel="noopener noreferrer"><img src="linkedin.5f3fc4ea.svg" alt="linkedin">linkedin</a>
+                        </div>
+                        <div class="web-box">
+                            <a href="https://alphadevvv.hashnode.dev" target="_blank" rel="noopener noreferrer"><img
+                                    src="hashnode-logo2.svg" alt="twitter">blog</a>
+                        </div>
+                        <div class="web-box">
+                            <a href="https://twitter.com/yensouchenna" target="_blank" rel="noopener noreferrer"><img
+                                    src="twitter.581e1f11.svg" alt="twitter">twitter</a>
+                        </div>
+                        <div class="web-box">
+                            <a href="https://www.instagram.com/yensouchenna/" target="_blank"
+                                rel="noopener noreferrer"><img src="instagram.438bb1a6.svg"
+                                    alt="instagram">instagram</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="contact">
+                    <h5 class="heading-5 sec-color mb-s">contact &mdash;</h5>
+                    <h2 class="heading-2">look who’s here 😁</h2>
+                    <div class="contact-box__wrapper">
+                        <div class="contact-box">
+                            <h5 class="heading-5 sec-color mb-s">email📧</h5>
+                            <a href="mailto:alphadev.onyenso@gmail.com" target="_blank"
+                                rel="nofollow noopener noreferrer">alphadev.onyenso@gmail.com</a><br>
+                            <!-- <a href="mailto:yensoroutebird@gmail.com" target="_blank" rel="nofollow noopener noreferrer">yensoroutebird@gmail.com</a> -->
+                        </div>
+                        <div class="contact-box">
+                            <h5 class="heading-5 sec-color mb-s">phone🇳🇬</h5>
+                            <a href="tel:+2349082976912">+(234) 908 297 6912</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <h5 class="heading-5">© 2026 Uchenna J. Onyenso Joseph</h5>
+            </footer>
+        </section>
+    </div>
+    <script>
+        var e = document.body, t = document.getElementsByClassName("smooth-scroll-wrapper")[0], n = t.getBoundingClientRect().height - "100px", a = .08, o = 0;
+        function r() {
+            var e = "translateY(-" + (o += (window.pageYOffset - o) * a) + "px) translateZ(0)";
+            t.style.transform = e, callScroll = requestAnimationFrame(r)
+        }
+        e.style.height = Math.floor(n) + "px", r();
+        var s = document.querySelector("section"), l = window.pageYOffset, i = function e() {
+            var t = window.pageYOffset, n = .2 * (t - l);
+            s.style.transform = "skewY(" + n + "deg)", l = t, requestAnimationFrame(e)
+        };
+        i();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="alphadev.js"></script>
+</body>
+
 </html>

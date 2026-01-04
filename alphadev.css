@@ -168,6 +168,13 @@ section {
     animation: line-anim 2s ease 1.5s forwards
 }
 
+.preloader #logo path:nth-child(8) {
+    stroke-width: 1;
+    stroke-dasharray: 580;
+    stroke-dashoffset: 580;
+    animation: line-anim 2s ease 1.8s forwards
+}
+
 .preloader svg {
     animation: fill .6s ease-in 3s forwards
 }
@@ -569,6 +576,207 @@ section {
 .project {
     grid-column: 2/14;
     padding: 6rem
+}
+
+.experience-wrapper {
+    margin-top: 4rem;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.experience-wrapper::before {
+    content: "";
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #09f755, #797575);
+    opacity: 0.3;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: 5rem;
+    padding-left: 4rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid rgba(121, 117, 117, 0.2);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.experience-item::before {
+    content: "";
+    position: absolute;
+    left: -2.7rem;
+    top: 0.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: #09f755;
+    border: 3px solid #000;
+    z-index: 1;
+}
+
+.experience-header {
+    margin-bottom: 2rem;
+}
+
+.experience-title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-title {
+    font-size: 2.8rem;
+    margin: 0;
+    color: #09f755;
+    font-family: Calibre-Medium, sans-serif;
+}
+
+.experience-period {
+    font-size: 1.4rem;
+    color: #797575;
+    font-family: Calibre-Regular, sans-serif;
+    white-space: nowrap;
+}
+
+.experience-company {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 0.5rem 0;
+    letter-spacing: 2px;
+    font-family: Calibre-Medium, sans-serif;
+}
+
+.experience-location {
+    font-size: 1.4rem;
+    color: #797575;
+    margin: 0;
+    font-family: Calibre-Regular, sans-serif;
+}
+
+.experience-summary {
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-family: Calibre-Regular, sans-serif;
+}
+
+.experience-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.experience-details > li {
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    padding-left: 2rem;
+    position: relative;
+    font-family: Calibre-Regular, sans-serif;
+}
+
+.experience-details > li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #09f755;
+    font-size: 1.4rem;
+}
+
+.experience-details > li strong {
+    color: #09f755;
+    font-family: Calibre-Medium, sans-serif;
+}
+
+.experience-achievements {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 2rem;
+}
+
+.experience-achievements li {
+    font-size: 1.5rem;
+    color: #797575;
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    font-family: Calibre-Regular, sans-serif;
+}
+
+.experience-achievements li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #09f755;
+    font-size: 1.2rem;
+}
+
+.mt-l {
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+    .experience-wrapper {
+        padding-left: 2rem;
+    }
+
+    .experience-item {
+        padding-left: 3rem;
+    }
+
+    .experience-item::before {
+        left: -1.7rem;
+    }
+
+    .experience-title {
+        font-size: 2.4rem;
+    }
+
+    .experience-title-row {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 37.5em) {
+    .experience-wrapper {
+        padding-left: 1.5rem;
+    }
+
+    .experience-item {
+        padding-left: 2.5rem;
+    }
+
+    .experience-item::before {
+        width: 1rem;
+        height: 1rem;
+        left: -1.2rem;
+    }
+
+    .experience-title {
+        font-size: 2rem;
+    }
+
+    .experience-company {
+        font-size: 1.5rem;
+    }
+
+    .experience-details > li {
+        font-size: 1.4rem;
+    }
 }
 
 .project-box__wrapper {
