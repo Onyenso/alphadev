@@ -38,8 +38,11 @@ html {
     -moz-osx-font-smoothing: grayscale;
     scroll-behavior: smooth;
     width: 100%;
-    height: 100%
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 100%
 }
+
 
 @media only screen and (max-width:62.5em) {
     html {
@@ -71,21 +74,18 @@ body {
     background-color: #000;
     color: #fff;
     overflow-x: hidden;
-    cursor: none;
+    cursor: auto;
     position: relative;
     width: 100%;
-    height: 100%
-}
-
-@media only screen and (min-width:20em) {
-    body {
-        overflow-x: scroll
-    }
+    height: 100%;
+    max-width: 100%
 }
 
 main {
     display: grid;
-    grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 .noScroll {
@@ -94,22 +94,35 @@ main {
 
 .smooth-scroll-wrapper {
     position: relative;
-    width: 100vw
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 section {
     transition: transform .25s;
-    will-change: transform
+    will-change: transform;
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box
+}
+
+section.content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 .preloader {
-    width: 100vw;
+    width: 100%;
+    max-width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
     background-color: #000;
-    z-index: 20
+    z-index: 20;
+    overflow: hidden
 }
 
 .preloader #logo {
@@ -196,18 +209,7 @@ section {
 }
 
 .cursor {
-    width: 2rem;
-    height: 2rem;
-    border: 2.5px solid #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: -10rem;
-    left: -10rem;
-    pointer-events: none;
-    transform: translate(-50%, -50%);
-    transform-origin: 100% 100%;
-    transition: all .3s ease;
-    transition-property: background, transform
+    display: none
 }
 
 @media only screen and (max-width:62.5em) {
@@ -298,7 +300,9 @@ section {
 
 .contact {
     grid-column: 2/14;
-    padding: 6rem
+    padding: 6rem;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 .contact-box__wrapper {
@@ -491,27 +495,32 @@ section {
 
 @media only screen and (max-width:37.5em) {
     .header {
-        min-height: 70rem
+        min-height: 100vh
     }
 }
 
 .header:after {
     content: "";
     position: absolute;
-    width: 100vw;
-    height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
     top: 0;
     right: 0;
     z-index: -1;
-    background: url(home-bg.19753168.svg) 100% 0 no-repeat
+    background: url(home-bg.19753168.svg) right center no-repeat;
+    background-size: auto 100%
 }
 
 @media only screen and (max-width:56.25em) {
     .header:after {
         transform: rotate(90deg);
-        background-position: 50% 0;
-        left: 0;
-        bottom: 0
+        background-position: center bottom;
+        background-size: 100vh auto;
+        top: auto;
+        bottom: -10%;
+        right: 0;
+        left: 0
     }
 }
 
@@ -575,13 +584,17 @@ section {
 
 .project {
     grid-column: 2/14;
-    padding: 6rem
+    padding: 6rem;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 .experience-wrapper {
     margin-top: 4rem;
     position: relative;
     padding-left: 3rem;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .experience-wrapper::before {
@@ -654,6 +667,17 @@ section {
     margin: 0.5rem 0;
     letter-spacing: 2px;
     font-family: Calibre-Medium, sans-serif;
+}
+
+.experience-company a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.experience-company a:hover {
+    color: #09f755;
+    text-decoration: underline;
 }
 
 .experience-location {
@@ -848,7 +872,10 @@ section {
 }
 
 .project-box__content {
-    align-self: center
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
 }
 
 .project-box:first-child,
@@ -901,7 +928,9 @@ section {
 
 .web {
     grid-column: 2/14;
-    padding: 6rem
+    padding: 6rem;
+    max-width: 100%;
+    overflow-x: hidden
 }
 
 .web-box__wrapper {
