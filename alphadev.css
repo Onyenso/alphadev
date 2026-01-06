@@ -515,7 +515,7 @@ section.content {
 @media only screen and (max-width:56.25em) {
     .header:after {
         transform: rotate(90deg);
-        background-position: center bottom;
+        background-position: 50% 90%;
         background-size: 100vh 100vw;
         top: auto;
         bottom: -10%;
