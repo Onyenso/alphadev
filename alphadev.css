@@ -516,7 +516,7 @@ section.content {
     .header:after {
         transform: rotate(90deg);
         background-position: center bottom;
-        background-size: 100vh auto;
+        background-size: 100vh 100vw;
         top: auto;
         bottom: -10%;
         right: 0;
